@@ -2,7 +2,7 @@
 
 </ul>
 <ul class="navbar-nav mb-1">
-    <li id="active_calls_nav" class="nav-item dropdown mx-1 my-2 my-lg-0">
+    {{--<li id="active_calls_nav" class="nav-item dropdown mx-1 my-2 my-lg-0">
         <a id="active_calls_link" href="#" class="dropdown-toggle nav-link pt-1 pb-0" data-toggle="dropdown" role="button" aria-expanded="false">
             <i id="active_call_nav_icon" class="fas fa-video fa-2x"></i>
             <span id="nav_calls_count" class="badge badge-pill badge-danger badge-notify"></span>
@@ -57,7 +57,7 @@
                 <span class="float-right"><a class="nav-search-link text-dark" href="#"><i class="fas fa-search"></i> Find Friends</a></span>
             </div>
         </div>
-    </li>
+    </li>--}}
     <li class="nav-item dropdown">
         <a id="user_nav_dp" href="#" class="dropdown-toggle nav-link pb-lg-0" data-toggle="dropdown" role="button" aria-expanded="false">
             <img class="rounded align-top my-n2 my-global-avatar" id="navProf_pic" height="38" width="38" src="{{messenger()->getProvider()->getProviderAvatarRoute()}}">

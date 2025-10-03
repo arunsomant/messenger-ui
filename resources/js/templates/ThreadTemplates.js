@@ -670,7 +670,7 @@ window.ThreadTemplates = (function () {
                     templates.thread_socket_error(true)+
                     '<span id="thread_option_call">'+templates.thread_call_state(data)+'</span>\n' +
                     (!data.locked && data.options.knock ? knok : '')+
-                    '    <button class="btn btn-lg text-secondary btn-light dropdown-toggle pt-1 pb-0 px-2" type="button" data-toggle="dropdown"><i class="fas fa-cog fa-2x"></i></button>\n' +
+                    /*'    <button class="btn btn-lg text-secondary btn-light dropdown-toggle pt-1 pb-0 px-2" type="button" data-toggle="dropdown"><i class="fas fa-cog fa-2x"></i></button>\n' +*/
                     '    <div class="dropdown-menu dropdown-menu-right">\n' +
                     '        <div class="dropdown-header py-0 h6 text-dark"><img id="group_avatar_'+data.id+'" alt="Group Image" class="show_group_avatar_'+data.id+' rounded-circle small_img" src="'+data.avatar.sm+'"/>' +
                     '           <span id="group_name_area">'+data.name+'</span></div>\n' +
@@ -759,7 +759,7 @@ window.ThreadTemplates = (function () {
         },
         thread_new_header : function(party){
             return '<div id="thread_header_area"><div class="dropdown float-right">\n' +
-                '<button class="btn btn-lg text-secondary btn-light dropdown-toggle pt-1 pb-0 px-2" type="button" data-toggle="dropdown"><i class="fas fa-cog fa-2x"></i></button>\n' +
+                /*'<button class="btn btn-lg text-secondary btn-light dropdown-toggle pt-1 pb-0 px-2" type="button" data-toggle="dropdown"><i class="fas fa-cog fa-2x"></i></button>\n' +*/
                 '<div class="dropdown-menu dropdown-menu-right">\n' +
                 '    <div '+(party.route ? 'onclick="window.open(\''+party.route+'\')"' : '')+' class="pointer_area dropdown-header py-0 h6 text-dark"><img alt="Profile Image" class="rounded-circle small_img" src="'+party.avatar.sm+'"/> '+party.name+'</div>\n' +
                 '    <div class="dropdown-divider"></div>\n' +
