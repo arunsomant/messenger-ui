@@ -398,14 +398,14 @@ window.ThreadTemplates = (function () {
             if(!ThreadManager.state().thread_lockout){
                 //options += '<div onclick="EmojiPicker.addReaction(\''+data.id+'\')" class="message_hover_opt float-left ml-0 pt-'+(grouped ? '0' : '2')+' h6 text-secondary pointer_area NS"><i title="React" class="fas fa-grin"></i></div>';
                 //options += '<div onclick="ThreadManager.reply({id : \''+data.id+'\'})" class="message_hover_opt float-left ml-2 pt-'+(grouped ? '0' : '2')+' h6 text-secondary pointer_area NS"><i title="Reply" class="fas fa-reply"></i></div>';
-                options += '<div class="dropdown">\n' +
+                /*options += '<div class="dropdown">\n' +
                     '<div id="msg_options_'+data.id+'" class="message_hover_opt float-left ml-2 pt-'+(grouped ? '0' : '2')+' h6 text-secondary pointer_area NS" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i title="Options" class="fas fa-ellipsis-v"></i></div>'+
                     '  <div class="dropdown-menu" aria-labelledby="msg_options_'+data.id+'">\n' +
                     (ThreadManager.state().thread_admin
                         ? '<a onclick="ThreadManager.archive().Message({id : \''+data.id+'\'}); return false;" class="dropdown-item" href="#"><i class="fas fa-trash"></i> Delete</a>'
                         : '') +
                     '  </div>\n' +
-                    '</div>';
+                    '</div>';*/
             }
             return options;
         },
@@ -746,7 +746,7 @@ window.ThreadTemplates = (function () {
                 (!data.locked && data.options.knock ?
                     '<button onclick="ThreadManager.calls().sendKnock()" id="knok_btn" data-toggle="tooltip" title="Knock at '+Messenger.format().escapeHtml(data.name)+'" data-placement="bottom" class="btn btn-lg text-secondary btn-light pt-1 pb-0 px-2 mr-1" type="button"><i class="fas fa-hand-rock fa-2x"></i></button>'
                     : '')+
-                '<button class="btn btn-lg text-secondary btn-light dropdown-toggle pt-1 pb-0 px-2" type="button" data-toggle="dropdown"><i class="fas fa-cog fa-2x"></i></button>\n' +
+                /*'<button class="btn btn-lg text-secondary btn-light dropdown-toggle pt-1 pb-0 px-2" type="button" data-toggle="dropdown"><i class="fas fa-cog fa-2x"></i></button>\n' +*/
                 '<div class="dropdown-menu dropdown-menu-right">\n' +
                 '    <div '+(data.resources.recipient.route ? 'onclick="window.open(\''+data.resources.recipient.route+'\')"' : '')+' class="pointer_area dropdown-header py-0 h6 text-dark"><img alt="Profile Image" class="rounded-circle small_img" src="'+data.resources.recipient.avatar.sm+'"/> '+data.name+'</div>\n' +
                 templates.thread_resource_dropdown() +
