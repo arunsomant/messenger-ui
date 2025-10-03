@@ -730,15 +730,6 @@ window.ThreadTemplates = (function () {
             return '';
         },
         thread_private_header : function(data){
-            let base = '<div class="dropdown-divider"></div>' +
-                (data.locked
-                        ? ''
-                        : (data.options.muted ? '<a onclick="ThreadManager.mute().unmute(); return false;" class="dropdown-item" href="#"><i class="fas fa-volume-up"></i> Unmute</a>'
-                            : '<a onclick="ThreadManager.mute().mute(); return false;" class="dropdown-item" href="#"><i class="fas fa-volume-mute"></i> Mute</a>')
-                ) +
-                '<a onclick="ThreadManager.archive().Thread(); return false;" class="dropdown-item" href="#"><i class="fas fa-trash"></i> Delete Conversation</a>' +
-                '</div>';
-
             return '<div id="thread_header_area"><div class="dropdown float-right">\n' +
                 templates.thread_socket_error()+
                 templates.private_pending_state(data)+
